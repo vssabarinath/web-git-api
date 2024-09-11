@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.user-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #333;
+}
+
+#full-name {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#username {
+  font-size: 18px;
+  color: #555;
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.repo-card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.repo-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.repo-description {
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #666;
+}
+
+.repo-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.repo-link:hover {
+  text-decoration: underline;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+
+  .container {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .user-info {
+    color: #e0e0e0;
+  }
+
+  #profile-pic {
+    border: 4px solid #bbb;
+  }
+
+  #full-name {
+    color: #e0e0e0;
+  }
+
+  #username {
+    color: #aaa;
+  }
+
+  .repo-card {
+    border: 1px solid #333;
+    background-color: #2e2e2e;
+  }
+
+  .repo-card h3 {
+    color: #e0e0e0;
+  }
+
+  .repo-description {
+    color: #ccc;
+  }
+
+  .repo-link {
+    color: #4a90e2;
+  }
+
+  .repo-link:hover {
+    text-decoration: underline;
+  }
+}
